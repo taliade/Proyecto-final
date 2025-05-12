@@ -1,0 +1,90 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff5f8;
+  color: #333;
+}
+
+.header {
+  padding: 1rem;
+  text-align: center;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #d36c9b;
+  font-weight: bold;
+}
+
+.pastel-bg {
+  background-color: #ffe0f0;
+}
+
+.pastel-footer {
+  background-color: #ffd6e7;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+.container {
+  padding: 1rem;
+}
+
+.grid-proyectos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.proyecto {
+  flex: 1 1 calc(50% - 1rem);
+  background-color: #fce4ec;
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+input, textarea {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #d36c9b;
+  color: white;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  .grid-proyectos {
+    flex-direction: column;
+  }
+
+  .nav {
+    flex-direction: column;
+  }
+
+  .carousel-item img {
+    height: 200px;
+    object-fit: cover;
+  }
+}
